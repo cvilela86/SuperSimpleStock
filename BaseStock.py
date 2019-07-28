@@ -28,6 +28,7 @@ class BaseStock:
     def validate(self,symbol):
         if ( symbol in self.stock): return True
         else: return False
+    
     def AddStock(self,
                  symbol="Unknown", type="Unknown",
                  last_div=None, fixed_div=None, Par_value=None
@@ -189,4 +190,5 @@ class BaseStock:
             p += 1
             prod *= trade["price"]
 
-        return float(prod)**(1./float(p))
+        if ( p == 0 ): return 0
+        else: return float(prod)**(1./float(p))
