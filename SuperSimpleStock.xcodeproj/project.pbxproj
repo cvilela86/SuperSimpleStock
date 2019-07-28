@@ -10,6 +10,7 @@
 		6A29CE9622EDA4CA009EC4A3 /* SuperSimpleStock.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = SuperSimpleStock.py; sourceTree = "<group>"; };
 		6A29CE9822EDE8C7009EC4A3 /* BaseStock.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = BaseStock.py; sourceTree = "<group>"; };
 		6A29CE9922EDECAE009EC4A3 /* RecordTrades.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = RecordTrades.py; sourceTree = "<group>"; };
+		6A29CE9A22EE5711009EC4A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -17,6 +18,7 @@
 			isa = PBXGroup;
 			children = (
 				6A29CE9622EDA4CA009EC4A3 /* SuperSimpleStock.py */,
+				6A29CE9A22EE5711009EC4A3 /* README.md */,
 				6A29CE9822EDE8C7009EC4A3 /* BaseStock.py */,
 				6A29CE9922EDECAE009EC4A3 /* RecordTrades.py */,
 			);

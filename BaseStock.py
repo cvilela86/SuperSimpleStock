@@ -25,6 +25,9 @@ class BaseStock:
             print(line)
         return ""
     
+    def validate(self,symbol):
+        if ( symbol in self.stock): return True
+        else: return False
     def AddStock(self,
                  symbol="Unknown", type="Unknown",
                  last_div=None, fixed_div=None, Par_value=None

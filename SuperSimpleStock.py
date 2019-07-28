@@ -54,6 +54,8 @@ while True:
     
     elif ( action == "record" ):
         symbol   = input( "Enter Stock symbol: ")
+        while ( not Trading_stocks.validate(symbol) ):
+            symbol = input("Invalid stock symbol Re-enter: ")
         quantity = input( "Enter quantity of shares: ")
         BuySell  = input( "Are the share buy or sell: ")
         price    = input( "What is the trade price: ")
@@ -64,18 +66,24 @@ while True:
             option = input( "What would you like to calculate (Yield, PEratio, VolWeight, GBCE):")
             if ( option == "Yield" ):
                 symbol = input( "Enter Stock symbol: " )
+                while ( not Trading_stocks.validate(symbol) ):
+                    symbol = input("Invalid stock symbol Re-enter: ")
                 price = input( "Enter market price: " )
                 print("")
                 print( "Dividend yield -> %f" % Trading_stocks.dividend_yield(symbol,price) )
                 print("")
             elif ( option == "PEratio" ):
                 symbol = input( "Enter Stock symbol: " )
+                while ( not Trading_stocks.validate(symbol) ):
+                    symbol = input("Invalid stock symbol Re-enter: ")
                 price = input( "Enter market price: " )
                 print("")
                 print( "P/E ratio -> %f" % Trading_stocks.PE_ratio(symbol,price) )
                 print("")
             elif ( option == "VolWeight" ):
                 symbol = input( "Enter Stock symbol: " )
+                while ( not Trading_stocks.validate(symbol) ):
+                    symbol = input("Invalid stock symbol Re-enter: ")
                 print("")
                 print("Volume Weight Stock price -> %f " %  Trading_stocks.volume_weighted(symbol) )
                 print("")
